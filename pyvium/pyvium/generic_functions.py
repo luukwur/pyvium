@@ -37,7 +37,7 @@ class GenericFunctions():
         PyviumVerifiers.verify_iviumsoft_is_running()
         status_labels = {
             '-1': 'no IviumSoft',
-            '0': 'connected',
+            '0': 'not connected',
             '1': 'available_idle',
             '2': 'available_busy',
             '3': 'no device available'
