@@ -37,7 +37,7 @@ class PyviumVerifiers:
         '''Raise exception if no device is connected to your computer through usb'''
         device_status = Core.IV_getdevicestatus()
 
-        if device_status == 3:
+        if device_status == 0 or device_status == 3:
             raise NoDeviceDetectedError
 
     @staticmethod
